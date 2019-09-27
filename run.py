@@ -26,15 +26,16 @@ sticky (string, optional): Stick the navbar to the top or the bottom of the view
 """
 
 navbar = dbc.NavbarSimple(
-    brand='Crime in Chicago',
+    brand='Chicago Crime',
     brand_href='/', 
     children=[
-        dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
+        #dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
+         
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
+        #dbc.NavItem(dcc.Link('Home', href='/insights', className='nav-link')),
     ],
     sticky='top',
-    color='primary', 
+    color='dark', 
     light=False, 
     dark=True
 )
@@ -44,11 +45,12 @@ footer = dbc.Container(
         dbc.Col(
             html.P(
                 [
-                    html.Span('Your Name', className='mr-2'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:<you>@<provider>.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/<you>/'), 
-                    html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
+                    html.Span('Johana Luna', className='mr-2'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:johana.luna87@gmail.com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/johanaluna/chicago-crime'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/johanaluna/'), 
+                    html.A(html.I(className='fab fa-medium mr-1'), href='https://medium.com/@johanaluna'), 
+                    html.A(html.I(className='fab fa-kaggle mr-1'), href='https://www.kaggle.com/johanaluna'), 
                 ], 
                 className='lead'
             )
@@ -73,10 +75,10 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/':
         return index.layout
-    elif pathname == '/predictions':
-        return predictions.layout
-    elif pathname == '/insights':
-        return insights.layout
+    #elif pathname == '/predictions':
+        #return predictions.layout
+   #elif pathname == '/insights':
+        #return insights.layout
     elif pathname == '/process':
         return process.layout
     else:
