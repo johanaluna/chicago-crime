@@ -402,6 +402,8 @@ pdp2 = dbc.Row([
             theft and burglary have a lower predicted arrest. 
 
             ###### To clarify, the PDP shows a correlation between the features and the target and don’t pretend to explain causality.
+            
+            [Documentation and NoteBook here](https://github.com/johanaluna/Chicago)
             """
         )
         )

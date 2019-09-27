@@ -59,7 +59,10 @@ problem = dbc.Row(
              The number of homicides rose by 8.6% in the United States[1](https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/murder), making Chicago an outlier, 
              and an interesting case to analyze. The vast majority of these killings happened in five mostly black and 
              Latino neighborhoods on the south and west side where only 9% of the 2.7m city lives[2](https://www.economist.com/democracy-in-america/2017/09/26/chicago-accounted-for-22-of-a-nationwide-increase-in-murders-last-year)
+            
 
+            
+            [Documentation and NoteBook here](https://github.com/johanaluna/Chicago)
             """
         ),
 
